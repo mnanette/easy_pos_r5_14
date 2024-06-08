@@ -2,7 +2,8 @@ import 'package:easy_pos_r5/helpers/sql_helper.dart';
 import 'package:easy_pos_r5/pages/categories.dart';
 import 'package:easy_pos_r5/pages/products.dart';
 import 'package:easy_pos_r5/widgets/grid_view_item.dart';
-//import 'package:flutter/foundation.dart';
+// ignore: unused_import
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 

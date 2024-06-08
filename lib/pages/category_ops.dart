@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:easy_pos_r5/helpers/sql_helper.dart';
 import 'package:easy_pos_r5/models/category.dart';
 import 'package:easy_pos_r5/widgets/app_elevated_button.dart';
@@ -95,15 +97,15 @@ class _CategoriesOpsPageState extends State<CategoriesOpsPage> {
           });
         }
 
-        // ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-        //    backgroundColor: Colors.green,
-        //    content: Text('Category Saved Successfully')));
-        // Navigator.pop(context, true);
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            backgroundColor: Colors.green,
+            content: Text('Category Saved Successfully')));
+        Navigator.pop(context, true);
       }
     } catch (e) {
-      // ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      //   backgroundColor: Colors.red,
-      // content: Text('Error In Create Category : $e')));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          backgroundColor: Colors.red,
+          content: Text('Error In Create Category : $e')));
     }
   }
 }
