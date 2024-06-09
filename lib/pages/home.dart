@@ -42,8 +42,8 @@ class _HomePageState extends State<HomePage> {
             children: [
               Expanded(
                 child: Container(
-                  height: MediaQuery.of(context).size.height / 3 + 154,
-                  // (kIsWeb ? 40 : 0),
+                  height: MediaQuery.of(context).size.height / 3 + 
+                   (kIsWeb ? 164 : 0),
                   color: Theme.of(context).primaryColor,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
